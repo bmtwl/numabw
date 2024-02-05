@@ -114,6 +114,9 @@ int main() {
                 printf("Error reading file", stderr);
              }
           }
+       } else {
+          printf("File %s doesn't exist!\nVerify DATA_FILE in source code before compiling\n\n",DATA_FILE);
+          return 1;
        }
     }
 
